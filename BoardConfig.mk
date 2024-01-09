@@ -16,7 +16,7 @@ DEVICE_PATH := device/xiaomi/marble
 -include device/xiaomi/miuicamera-marble/BoardConfig.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := marble,marblein
+TARGET_OTA_ASSERT_DEVICE := marble|marblein
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
