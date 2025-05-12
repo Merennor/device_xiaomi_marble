@@ -7,24 +7,13 @@
 # Inherit from marble device
 $(call inherit-product, device/xiaomi/marble/device.mk)
 
-# Inherit from common Matrixx configuration
+# Inherit from common CrDroid configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_ENABLE_BLUR := true
 TARGET_SUPPORTS_BLUR := true
-TARGET_DISABLE_EPPE := true
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-
-# Matrixx
-MATRIXX_BUILD_TYPE := Official
-MATRIXX_MAINTAINER := CHAITANYA
-MATRIXX_CHIPSET := SM7475
-MATRIXX_BATTERY := 5000mah
-MATRIXX_DISPLAY := 1080x2400
-TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS_COMMS_SUITE := true
-WITH_GMS := true
 
 PRODUCT_NAME := lineage_marble
 PRODUCT_DEVICE := marble
